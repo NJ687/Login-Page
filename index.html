@@ -12,23 +12,51 @@
     <div id="Login">
         <h1 id="Title">Login</h1>
         <div id="Email">
-            <p id="Form-Text">
-                Email
+            <p id="Form-Text" style="outline: none;">
+                <input type="email" placeholder="Email" style="
+                outline: none; border-style: none;
+
+                font-family: 'Blinker';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+
+                width: 175px;
+
+                color: #D0D0D0;
+            " maxlength="28" id="email-input">
             </p>
         </div>
         <div id="Password">
-            <p id="Form-Text">
-                Password
+            <p id="Form-Text" style="outline: none">
+                <input type="password" placeholder="Password" style="
+                    outline: none; border-style: none;
+
+                    font-family: 'Blinker';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 14px;
+
+                    position: relative;
+                    top: -5px;
+
+                    color: #D0D0D0;
+                " maxlength="15" id="password-input">
+                
             </p>
         </div>
-        <div id="Login-Button">
+        <div id="Login-Button" onclick="Login()">
             <p id="Login-Button-Text">
                 Login
             </p>
         </div>
-        <p id="Forgot">
+        <p id="Forgot" onclick="Forgot()">
             Forgot your password?
         </p>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
